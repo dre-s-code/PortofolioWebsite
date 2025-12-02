@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Andreas Boni Baik Simamora</title>
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Clock -->
+  <div id="clock">
+    <div class="clk-time"></div>
+    <div class="clk-date"></div>
+  </div>
+
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <div class="topbar-left">
+      <div class="mode-toggle" id="modeToggle">
+        <div class="toggle-circle"></div>
+        <span class="toggle-label" data-i18n="toggle.dark">DARK MODE</span>
+      </div>
+      <div class="lang-switch" id="langSwitch" aria-label="Language Switcher">
+        <button class="lang-btn active" data-lang="id">Indonesia</button>
+        <button class="lang-btn" data-lang="en">English</button>
+        <button class="lang-btn" data-lang="zh">中文</button>
+        <button class="lang-btn" data-lang="fr">Français</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HOME -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-block">
+        <h1 class="hero-name">
+          <span class="first-name">ANDREAS</span><br/>
+          <span class="last-name">BONI BAIK SIMAMORA</span>
+        </h1>
+        <span class="role-box">
+          <span class="role-text" id="roleText">Data Science & Manipulating</span>
+        </span>
+        <div class="text-single">
+          <p id="summaryText" data-i18n="summary">
+            Lulusan S1 Sains Atmosfer dan Keplanetan berfokus pada Meteorologi,
+            berpengalaman mengolah data atmosfer &amp; lingkungan, membangun
+            model numerik, serta antusias pada coding, web development, dan data science.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="hero-photo"></div>
+  </section>
+
+  <!-- PENDIDIKAN -->
+ <!-- PENDIDIKAN -->
+  <section id="Academics" class="content">
+    <div class="container edu-container">
+      <h2 class="edu-title">Jenjang Akademik</h2>
+
+      <div class="edu-scroll">
+        <!-- SD -->
+        <div class="edu-card"
+             data-title="SD Swasta RK Budi Mulia 2 Pematangsiantar"
+             data-desc="Dalam menempuh jenjang pendidikan Sekolah Dasar, saya disekolahkan oleh orang tua saya di SD Swasta RK Budi Mulia 2 Pematangsiantar.
+              Sekolah ini cukup dekat dengan rumah saya (hanya sekitar 350 meter). Disini saya menjalani pendidikan seperti siswa-siswa pada umumnya. 
+              Saya cukup aktif semasa Sekolah Dasar dalam bidang ekstrakulikuler Komputer, Kesenian musik, hingga Sepak bola.
+              Masa sekolah dasar selama 6 tahun dijalani dengan baik seperti murid-murid pada umumnya."
+             data-img="assets/bm2.png">
+          <img src="assets/logoBM.png" alt="Logo SD" class="edu-logo"/>
+          <div class="edu-info">
+            <h3>Sekolah Dasar</h3>
+            <p>2009 – 2015</p>
+            <span class="edu-link">klik untuk detail</span>
+          </div>
+        </div>
+
+        <!-- SMP -->
+        <div class="edu-card"
+             data-title="SMP Swasta RK Bintang Timur Pematangsiantar"
+             data-desc="Setelah lulus SD, saya melanjut pendidikan pada salah satu SMP Unggulan di kota saya, yakni SMP Swasta RK Bintang Timur.
+             SMP ini terkenal sejak lama atas pencapaian-pencapaian yg diraih diberbagai bidang. Saya menempuh pendidikan di sekolah ini dengan baik seperti
+             siswa-siswa pada umumnya. Saya juga aktif di bidang ekstrakulikuler Pramuka, Futsal dan Sepak Bola, yang memang menjadi hobi saya sejak lama."
+             data-img="assets/smptBT.png">
+          <img src="assets/logoBTT.png" alt="Logo SMP" class="edu-logo"/>
+          <div class="edu-info">
+            <h3>Sekolah Menengah Pertama</h3>
+            <p>2015 – 2018</p>
+            <span class="edu-link">klik untuk detail</span>
+          </div>
+        </div>
+
+        <!-- SMA -->
+        <div class="edu-card"
+             data-title="SMA Negeri 1 Pematangsiantar"
+             data-desc="Setelah lulus SMP, saya melanjut pendidikan di SMA Negri 1 Pematangsiantar. Jarak tempuh rumah ke sekolah merupakan salah satu
+             faktor saya untuk memilih SMA ini yang hanya berjarak sekitar 200 meter (berada ditengah-tengah antara rumah saya dan SD saya dulu). Di SMA, saya memilih 
+             jurusan Ilmu Pengetahuan Alam. Saya juga aktif pada ekstrakulikuler English Club dan turut serta dalam beberapa perlombaan bahasa inggris antar kelas beberapa kali."
+             data-img="assets/smansa.png">
+          <img src="assets/tutWuri.png" alt="Logo SMA" class="edu-logo"/>
+          <div class="edu-info">
+            <h3>Sekolah Menengah Atas</h3>
+            <p>2018 – 2021</p>
+            <span class="edu-link">klik untuk detail</span>
+          </div>
+        </div>
+
+        <!-- Kuliah -->
+        <div class="edu-card"
+             data-title="Institut Teknologi Sumatera"
+             data-desc="Setelah lulus SMA, saya melanjutkan kuliah di wilayah yang jauh dari kampung halaman, yaitu Lampung. Institut Teknologi Sumatera
+             adalah tujuan saya dan Program studi Sains Atmosfer dan Keplanetan menjadi pilihan saya. Selama masa studi, saya memilih fokus kejuruan Sains Atmosfer
+             atau yang dikenal akrab dengan Meteorologi. Di meteorologi, saya mempelajari tentang ilmu fisis kebumian, bagaimana pertukaran panas antar wilayah, pergerakan angin, 
+             hingga ilmu hidrologi. Selama masa studi, saya aktif pada Himpunan (organisasi) dengan menjadi Kepala Divisi, menjadi Asisten Praktikum, hingga Asisten Dosen dalam
+             pengelolaan proyek."
+             data-img="assets/itera.jpg">
+          <img src="assets/logoITERA.jpg" alt="Logo Kuliah" class="edu-logo"/>
+          <div class="edu-info">
+            <h3>Strata 1</h3>
+            <p>2021 – 2025</p>
+            <span class="edu-link">klik untuk detail</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="Projects" class="content">
+    <div class="container proj-container">
+      <h2 class="proj-title">Projects</h2>
+      <p class="proj-sub">Kumpulan proyek & eksperimen terdahulu.</p>
+
+      
+        <!-- PATCH: TOP ROW (Signature Projects) -->
+        <div class="proj-row-top">
+<div class="proj-card"
+            data-title="Dinas Lingkungan Hidup DKI Jakarta"
+            data-subtitle="Juni 2025 - September 2025"
+            data-img1="assets/project4a.png"
+            data-img2="assets/project4b.png"
+            data-img3="assets/project4c.png"
+            data-body="Project ini merupakan project terbesar yang pernah saya kerjakan selama masa studi saya. Skala dan kompleksitasnya jauh melampaui project-project sebelumnya, karena melibatkan banyak data, skenario, serta tahapan analisis yang membutuhkan waktu cukup panjang. Tujuan utama project ini adalah untuk memahami kondisi polusi udara, faktor-faktor yang memengaruhinya, serta bagaimana proyeksi pencemaran bisa terjadi di masa mendatang pada berbagai skala, mulai dari tingkat kota, provinsi, hingga nasional.
+            Langkah pertama dalam project ini adalah mengolah data kualitas udara ambien yang diperoleh dari beberapa pos pemantau milik Dinas Lingkungan Hidup DKI Jakarta. Data mentah ini kemudian dikonversi menjadi Indeks Standar Pencemar Udara (ISPU), yaitu indeks yang menunjukkan apakah udara di suatu lokasi termasuk sehat, sedang, tidak sehat, atau berbahaya. Dari sini, saya menganalisis pola pencemaran udara di Jakarta, termasuk keterkaitannya dengan curah hujan pada musim basah dan musim kering. Hujan, sebagaimana diketahui, dapat membantu “mencuci” polutan di udara, sehingga hubungannya dengan fluktuasi polusi menjadi menarik untuk diteliti.
+            Tahap selanjutnya adalah menyusun skenario proyeksi dampak dengan mempertimbangkan variabel lain, seperti topografi, tutupan lahan, hingga kepadatan penduduk. Variabel-variabel ini penting karena memengaruhi sebaran polusi udara. Misalnya, daerah padat penduduk dengan aktivitas transportasi tinggi tentu menghasilkan emisi lebih besar, sementara topografi pegunungan bisa memperangkap polusi dalam lembah. Analisis ini memberi gambaran lebih luas, tidak hanya melihat kondisi saat ini, tetapi juga memperkirakan apa yang bisa terjadi dalam skenario-skenario tertentu.
+            Untuk memperdalam kajian, saya menggunakan model numerik WRF-CHEM (Weather Research and Forecasting – Chemistry), sebuah model canggih yang mampu memprediksi kondisi cuaca sekaligus komposisi kimia atmosfer. Awalnya, pemodelan hanya dilakukan untuk wilayah Jakarta. Namun, seiring berjalannya penelitian dan berkembangnya skenario yang dikaji, cakupan diperluas menjadi seluruh Pulau Jawa, dan pada akhirnya mencapai skala se-Indonesia. Perluasan ini membuat project semakin besar, tetapi juga semakin relevan, karena dapat memberikan gambaran menyeluruh tentang kondisi polusi udara di tingkat nasional.
+            Analisis juga dihubungkan dengan parameter tambahan seperti luas wilayah, resolusi grid model, dan ketinggian lapisan batas atmosfer (Planetary Boundary Layer). Kombinasi ini memungkinkan saya menghitung daya tampung polusi udara dari tiap-tiap daerah, baik pada level grid maupun kabupaten/kota. Dengan hasil ini, setiap daerah dapat dipetakan berdasarkan seberapa besar kapasitas lingkungannya menahan polusi sebelum kualitas udara menurun drastis.
+            Secara keseluruhan, project ini bukan hanya sebuah studi akademik, tetapi juga memberikan gambaran nyata tentang kondisi dan potensi permasalahan polusi udara di Indonesia. Hasil penelitian ini dapat dijadikan dasar awal bagi pengambil kebijakan untuk merancang strategi pengendalian pencemaran udara yang lebih tepat sasaran, baik di kota besar seperti Jakarta maupun di wilayah lain di seluruh Indonesia. Bagi saya pribadi, project ini menjadi pengalaman berharga sekaligus pencapaian penting, karena berhasil menyatukan ilmu meteorologi, pemodelan numerik, serta analisis spasial dalam satu penelitian berskala besar.">
+            <!-- PATCH: Signature Ribbon -->
+            <span class="sig-bar">SIGNATURE PROJECT</span>
+          <img src="assets/project4.png" alt="Project 4" class="proj-img"/>
+          <div class="proj-info">
+            <h3>Dinas Lingkungan Hidup DKI Jakarta</h3>
+            <p>Project Dosen</p>
+          </div>
+        </div>
+
+<div class="proj-card"
+            data-title="Clean Air Asia"
+            data-subtitle="Mei 2025 - Juni 2025"
+            data-img1="assets/project3a.png"
+            data-img2="assets/project3b.png"
+            data-img3="assets/project3c.png"
+            data-body="Project ini merupakan project pertama saya setelah resmi menjadi Asisten Dosen. Bagi saya, project ini terasa cukup besar dan menantang, apalagi karena sebelumnya saya belum sering mendapatkan project langsung dari dosen maupun pihak eksternal. Inilah yang membuat project ini menjadi pengalaman berharga sekaligus titik awal bagi saya untuk terjun ke penelitian dan pekerjaan yang lebih serius di bidang atmosfer dan lingkungan.
+            Project ini berawal dari kerja sama dengan sebuah organisasi internasional bernama Clean Air Asia, sebuah lembaga non-pemerintah yang memiliki misi mulia: mewujudkan kualitas udara yang lebih baik di seluruh dunia demi kehidupan yang sehat dan umur harapan hidup yang lebih tinggi bagi masyarakat. Mereka menurunkan data mentah kepada tim kami, yang berisi informasi mengenai berbagai perusahaan (PT) yang beroperasi di Pulau Jawa, termasuk jenis bahan bakar dan jumlah bahan bakar yang digunakan oleh perusahaan-perusahaan tersebut.
+            Tugas pertama saya dalam project ini adalah melakukan Data Quality Control (QC). Tahap ini sangat penting, karena memastikan bahwa data yang digunakan benar-benar bersih dan siap untuk dianalisis lebih lanjut. Saya harus memeriksa apakah ada data yang kosong (null), tidak konsisten, atau bahkan anomali. Proses ini memang terlihat sederhana, tetapi sangat krusial—sebab kualitas analisis sangat tergantung dari kualitas data awal. Setelah data dipastikan bersih, barulah bisa dilakukan perhitungan mengenai beban emisi yang dihasilkan oleh masing-masing perusahaan di Pulau Jawa.
+            Tahap berikutnya adalah memperluas kajian dari sekadar emisi perusahaan ke sumber bergerak, yaitu kendaraan bermotor. Pada bagian ini, saya terlibat dalam proses digitasi jalan dan estimasi jumlah kendaraan yang melintas per tahunnya. Data jalan yang digunakan tidak hanya berupa peta, tetapi juga hasil pengukuran lapangan seperti panjang jalan, lokasi, serta klasifikasinya. Dengan menggabungkan data jalan dan data kendaraan, kami bisa memperkirakan kontribusi emisi dari sektor transportasi secara lebih realistis.
+            Setelah data dari sumber titik (perusahaan) dan sumber bergerak (kendaraan) berhasil diproses, semua informasi kemudian dimodelkan menggunakan Sistem Informasi Geografis (SIG). Melalui SIG, sebaran emisi di Pulau Jawa bisa dipetakan secara spasial dan temporal, sehingga memberikan gambaran bagaimana kualitas udara di berbagai wilayah berkembang setiap tahunnya. Dari hasil pemodelan ini terlihat jelas wilayah-wilayah dengan konsentrasi emisi tinggi, yang nantinya bisa menjadi perhatian utama dalam upaya pengendalian pencemaran.
+            Sebagai penutup, project ini kemudian memusatkan perhatian pada Jakarta, ibu kota negara, yang dikenal sebagai salah satu kota dengan kualitas udara terburuk di Indonesia bahkan di dunia. Fokus ini sangat relevan, karena Jakarta merupakan pusat aktivitas ekonomi dan transportasi, sehingga tekanan terhadap lingkungan jauh lebih besar dibandingkan daerah lain. Dengan hasil pemodelan yang ada, project ini tidak hanya memberi informasi ilmiah, tetapi juga dapat menjadi masukan penting bagi kebijakan pengendalian polusi udara di Jakarta dan Pulau Jawa secara keseluruhan.">
+            <!-- PATCH: Signature Ribbon -->
+            <span class="sig-bar">SIGNATURE PROJECT</span>
+          <img src="assets/project3.png" alt="Project 3" class="proj-img"/>
+          <div class="proj-info">
+            <h3>Clean Air Asia</h3>
+            <p>Project Dosen</p>
+          </div>
+        </div>
+        </div>
+<div class="proj-scroll">
+        
+        <!-- Project 1 -->
+        <div class="proj-card"
+            data-title="Analisis Weighted-Ensemble Model WRF Untuk Prediksi Hujan di ITERA"
+            data-subtitle="Maret 2025 - Juni 2025"
+            data-img1="assets/project1a.png"
+            data-img2="assets/project1b.png"
+            data-img3="assets/project1c.png"
+            data-body="Project ini saya kerjakan secara individu sebagai Tugas Akhir (skripsi) dalam rangka menyelesaikan masa studi S1 saya di Program Studi Sains Atmosfer dan Keplanetan. Sebagai mahasiswa yang berfokus pada bidang Meteorologi, saya memilih topik penelitian yang dekat dengan minat dan passion saya, yaitu pemodelan cuaca numerik.
+            Pemodelan cuaca numerik pada dasarnya adalah upaya untuk “menerjemahkan” kondisi atmosfer ke dalam bentuk persamaan matematika yang dijalankan oleh komputer. Model yang saya gunakan bernama WRF (Weather Research and Forecasting Model), sebuah model atmosfer yang banyak digunakan secara internasional untuk penelitian maupun operasional prakiraan cuaca. WRF sangat fleksibel, karena bisa diatur dengan berbagai parameter, resolusi, serta data masukan yang berbeda sesuai kebutuhan.
+            Dalam penelitian ini, saya mencoba menguji beberapa skenario dengan WRF untuk mengetahui konfigurasi mana yang mampu memberikan hasil prediksi hujan paling akurat di wilayah kajian saya, yaitu kampus ITERA di Lampung. Fokus saya adalah membandingkan dua sumber data masukan utama: GFS (Global Forecast System) yang biasa digunakan di praktikum kampus, dan ERA5 (ECMWF Reanalysis) yang merupakan produk data atmosfer dengan resolusi lebih tinggi dan kualitas lebih baik.
+            Setelah melalui serangkaian simulasi, analisis, dan verifikasi terhadap data hujan observasi, saya memperoleh kesimpulan yang jelas: di wilayah kajian ITERA, WRF dengan data masukan ERA5 terbukti lebih baik dalam memprediksi intensitas hujan dibandingkan WRF dengan data masukan GFS. Hasil ini sekaligus memberi gambaran bahwa untuk penelitian maupun aplikasi praktikum di masa depan, penggunaan ERA5 bisa menjadi pilihan yang lebih tepat dibandingkan hanya bergantung pada GFS.
+            Dengan penelitian ini, saya tidak hanya menyelesaikan syarat akademik untuk memperoleh gelar sarjana, tetapi juga berharap bisa memberikan kontribusi kecil bagi pengembangan ilmu meteorologi, khususnya di bidang pemodelan cuaca numerik di Indonesia.">
+          
+          <img src="assets/project1.png" alt="Project 1" class="proj-img"/>
+          <div class="proj-info">
+            <h3>Analisis Weighted-Ensemble (GFS vs ERA5) Model WRF Untuk Prediksi Hujan di ITERA</h3>
+            <p>Tugas Akhir untuk Memperoleh Gelar Sarjana</p>
+          </div>
+        </div>
+
+        <!-- Project 9 -->
+        <div class="proj-card"
+            data-title="Analisis Perbedaan Sebaran Emisi SO2 Antara Cerobong Boiler & Cerobong Tungku Bakar pada Perusahaan Industri Minyak Mentah Kelapa Sawit"
+            data-subtitle="Juli 2024 - Agustus 2024"
+            data-img1="assets/project9a.png"
+            data-img2="assets/project9b.jpg"
+            data-img3="assets/project9c.jpg"
+            data-body="Project ini saya kerjakan selama menjalani masa magang kerja praktik yang juga terintegrasi dengan program Kampus Merdeka – Magang Mandiri. Pada kesempatan ini, saya ditempatkan di Dinas Lingkungan Hidup dan Kehutanan Provinsi Sumatera Utara, sebuah instansi pemerintah yang memiliki peran penting dalam mengawasi, mengendalikan, serta menjaga kualitas lingkungan hidup di daerah tersebut.
+            Selama beberapa bulan magang, saya mendapatkan pengalaman berharga dengan ditempatkan di berbagai bidang. Salah satu bidang utama yang saya jalani adalah Bidang Pengendalian Pencemaran Lingkungan, di mana saya terlibat langsung dalam proses peninjauan laporan-laporan pemantauan dari berbagai perusahaan industri (PT) yang beroperasi di wilayah Sumatera Utara. Dari laporan-laporan inilah saya mulai memahami bagaimana aktivitas industri dapat mempengaruhi kualitas udara, air, maupun tanah, dan bagaimana pemerintah melakukan pengawasan untuk memastikan perusahaan tetap mematuhi aturan lingkungan.
+            Berdasarkan akses data yang saya peroleh, saya kemudian memilih salah satu perusahaan sebagai kasus kajian dalam project ini. Fokus utama saya adalah pada pemodelan pencemaran udara, sebuah metode yang menggunakan pendekatan matematis dan komputer untuk memperkirakan sebaran polusi yang dihasilkan dari suatu sumber tertentu. Kajian ini saya pilih karena sejak awal perkuliahan di Program Studi Sains Atmosfer dan Keplanetan, saya sudah tertarik pada topik atmosfer dan polusi udara, terutama bagaimana polutan menyebar di udara dan dampaknya terhadap lingkungan maupun kesehatan masyarakat.
+            Dari hasil pengolahan data dan pemodelan, saya menemukan bahwa Tungku Bakar berpotensi menghasilkan penyebaran polusi udara yang lebih besar dibandingkan dengan Tungku Pemanas Uap (Boiler). Hal ini cukup menarik, karena pada dasarnya kedua jenis tungku tersebut digunakan untuk kebutuhan industri, tetapi dengan fungsi dan ukuran yang berbeda. Tungku Bakar biasanya digunakan untuk proses pembakaran langsung dengan intensitas tinggi, sementara Boiler digunakan untuk menghasilkan uap yang kemudian dimanfaatkan dalam berbagai proses produksi.
+            Namun, hasil ini tidak serta-merta bisa dijadikan kesimpulan mutlak. Perbedaan potensi polusi udara yang ditimbulkan juga sangat dipengaruhi oleh dimensi ukuran, kapasitas, serta cara pengoperasian masing-masing tungku. Oleh karena itu, hasil kajian ini masih perlu ditindaklanjuti dengan pemantauan lebih mendalam dan data tambahan agar dapat benar-benar dipastikan.
+            Secara keseluruhan, project ini tidak hanya memberi saya pengalaman akademik dalam menerapkan ilmu yang saya pelajari di kampus, tetapi juga membuka wawasan praktis tentang bagaimana masalah lingkungan ditangani di lapangan. Saya belajar bahwa menjaga kualitas udara bukan hanya soal menghitung angka atau menjalankan model komputer, tetapi juga memahami konteks industri, regulasi, serta dampaknya terhadap masyarakat.">
+          <img src="assets/project9.png" alt="Project 9" class="proj-img"/>
+          <div class="proj-info">
+            <h3>Analisis Perbedaan Sebaran Emisi SO2 Antara Cerobong Boiler & Cerobong Tungku Bakar pada Perusahaan Industri Minyak Mentah Kelapa Sawit</h3>
+            <p>Project Kerja Praktik (MBKM Magang Mandiri)</p>
+          </div>
+        </div>
+
+        <!-- Project 10 -->
+        <div class="proj-card"
+            data-title="Prototyping & 3D Printing"
+            data-subtitle="Mei 2024"
+            data-img1="assets/project10a.png"
+            data-img2="assets/project10b.png"
+            data-img3="assets/project10c.png"
+            data-body="Project ini merupakan sebuah mini project yang saya kerjakan secara individu pada masa semester 6 perkuliahan. Mini project ini muncul sebagai tugas opsional dari mata kuliah Astrorobotika, artinya mahasiswa diberi pilihan untuk mengerjakan atau tidak mengerjakannya. Walaupun sifatnya opsional, saya memutuskan untuk ikut serta karena melihat bahwa project ini memiliki nilai tantangan dan pengalaman yang sangat berharga.
+            Salah satu alasan saya menempatkan project ini dalam portofolio adalah karena hanya sedikit mahasiswa yang memilih untuk mengerjakannya. Kompleksitas pekerjaan serta waktu yang cukup lama, khususnya pada tahap 3D Printing, membuat sebagian besar mahasiswa enggan untuk mengambilnya. Namun, bagi saya, tantangan tersebut justru menjadi motivasi tersendiri untuk mencoba.
+            Saya memang memiliki ketertarikan khusus pada dunia 3D Printing. Prosesnya sangat menarik bagi saya karena melibatkan berbagai tahapan, mulai dari merancang desain objek, melakukan simulasi di software, hingga akhirnya mewujudkan desain tersebut menjadi bentuk nyata melalui printer 3D. Ada kepuasan tersendiri ketika melihat sebuah desain digital perlahan terbentuk lapis demi lapis menjadi benda fisik yang bisa dipegang.
+            Tentu saja, hasil yang saya capai belum bisa dibandingkan dengan karya-karya 3D Printing profesional yang sudah banyak dilakukan oleh orang lain. Namun, bagi saya, keberhasilan menyelesaikan project ini adalah sebuah pencapaian penting. Selain melatih kesabaran dan ketekunan dalam menunggu proses cetak yang cukup lama, project ini juga membuat saya belajar banyak tentang detail teknis dan potensi pengembangan teknologi 3D Printing ke depan.
+            Secara keseluruhan, pengalaman ini memberi saya rasa bangga sekaligus semangat baru. Walaupun hanya mini project, saya merasa sudah melangkah ke sesuatu yang nyata dan relevan dengan perkembangan teknologi modern. Keberanian untuk mencoba, proses belajar yang saya jalani, serta hasil akhir yang berhasil diwujudkan adalah alasan utama mengapa project ini layak saya angkat dalam portofolio saya.">
+          <img src="assets/project10.png" alt="Project 10" class="proj-img"/>
+          <div class="proj-info">
+            <h3>Prototyping & 3D Printing</h3>
+            <p>Mini-Project Kuliah</p>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="proj-card"
+            data-title="Pengolahan Data Meteorologi & Simulasi Model AERMET"
+            data-subtitle="November 2024"
+            data-img1="assets/project2a.png"
+            data-img2="assets/project2b.png"
+            data-img3="assets/project2c.png"
+            data-body="Project ini merupakan hasil kolaborasi saya dengan Dosen Pembimbing Kerja Praktik. Awalnya, dosen saya cukup tertarik dengan hasil simulasi yang saya kerjakan pada laporan kerja praktik, khususnya pada analisis nilai albedo. Nilai albedo sendiri dapat diartikan sebagai ukuran banyaknya cahaya matahari yang dipantulkan kembali oleh permukaan bumi. Semakin tinggi nilai albedo, semakin banyak cahaya yang dipantulkan, dan semakin rendah nilainya, semakin banyak energi matahari yang diserap. Konsep sederhana ini ternyata punya pengaruh besar terhadap efisiensi berbagai teknologi, salah satunya adalah panel surya.
+            Dari ketertarikan tersebut, beliau mengusulkan agar dilakukan kajian lebih lanjut untuk mengetahui seberapa efektif panel surya di ITERA jika ditinjau dari nilai albedo dan tutupan lahan yang ada di kampus. Hal ini menarik karena kondisi lahan di ITERA memang terus berubah akibat pembangunan yang intensif dalam beberapa tahun terakhir. Perubahan lahan, misalnya dari area hijau menjadi bangunan atau jalan beraspal, secara otomatis akan mengubah nilai albedo dan berdampak pada berapa banyak energi matahari yang bisa dimanfaatkan panel surya.
+            Sebagai mahasiswa yang baru saja menyelesaikan Seminar Kerja Praktik, saya menyambut baik kesempatan ini. Saya mulai membangun pemodelan menggunakan perangkat lunak AERMET, yaitu sebuah model yang digunakan untuk memperoleh karakteristik stabilitas atmosfer di suatu lokasi. Dalam kasus ini, wilayah kajian adalah area sekitar kampus ITERA. Data yang saya gunakan bukanlah data sembarangan, melainkan data cuaca dari AWS (Automatic Weather Station) ITERA, yang dikelola oleh UPT Meteorologi, Klimatologi, dan Geofisika ITERA (MKG ITERA). Artinya, kualitas data terjamin sehingga hasil simulasi juga bisa lebih akurat.
+            Project ini bukan sekadar tentang menghitung angka albedo, tetapi juga tentang bagaimana saya belajar mengambil keputusan, mengkoordinasikan langkah-langkah penelitian dengan dosen, serta menghadapi tantangan yang muncul. Tantangan terbesar adalah adanya kekosongan data pada beberapa periode, yang membuat proses pemodelan jauh lebih sulit. Kekosongan data ini menguji kemampuan saya untuk berinisiatif, mencari solusi alternatif, dan tetap menjaga komunikasi yang baik dengan dosen pembimbing agar penelitian tetap bisa berjalan.
+            Pada akhirnya, saya berhasil menyelesaikan pemodelan meskipun penuh dengan rintangan. Hasil kajian ini menunjukkan gambaran awal tentang bagaimana perubahan tutupan lahan di ITERA berpengaruh terhadap potensi energi panel surya melalui mekanisme albedo. Hingga saat ini, penelitian ini masih terus berlanjut dan sedang dalam proses menuju publikasi di salah satu jurnal terindeks SINTA, sehingga diharapkan bisa memberikan kontribusi nyata bagi ilmu pengetahuan sekaligus bermanfaat untuk pengembangan energi terbarukan di kampus ITERA.">
+          <img src="assets/project2.png" alt="Project 2" class="proj-img"/>
+          <div class="proj-info">
+            <h3>Pengolahan Data Meteorologi & Simulasi Model AERMET</h3>
+            <p>Project Kolaborasi Bersama Dosen</p>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        
+
+        <!-- Project 4 -->
+        
+
+        <!-- Project 5 -->
+        <div class="proj-card"
+            data-title="PT. Progressive Alumina Indonesia"
+            data-subtitle="Agustus 2025"
+            data-img1="assets/project5a.png"
+            data-img2="assets/project5b.png"
+            data-img3="assets/project5c.png"
+            data-body="PT Progressive Indonesia Alumina adalah perusahaan yang berlokasi di Pulau Kalimantan dan bergerak dalam bidang pengolahan alumina tingkat tinggi. Sebagai salah satu produsen utama di Indonesia, perusahaan ini dikenal karena komitmennya menyediakan produk dengan standar kualitas internasional. Selain itu, perusahaan juga memiliki reputasi yang baik di industri, karena mampu menjaga konsistensi mutu sekaligus memperhatikan aspek keberlanjutan dalam operasionalnya.
+            Project ini merupakan tugas yang diturunkan oleh dosen saya, dengan fokus pada pemodelan sebaran polusi udara yang dihasilkan dari aktivitas perusahaan tersebut. Tujuannya adalah untuk memahami bagaimana emisi yang dilepaskan ke lingkungan dapat menyebar, serta seberapa besar potensi dampak yang ditimbulkan terhadap masyarakat dan lingkungan sekitar. Sebagai bagian dari project, saya juga ditugaskan menyusun Bab 4: Prakiraan Dampak, yang berisi analisis potensi pengaruh operasional perusahaan terhadap kualitas udara, kesehatan manusia, dan ekosistem di sekitarnya.
+            Dalam pengerjaan project ini, saya memanfaatkan data emisi yang dimiliki perusahaan serta informasi pendukung lainnya, seperti kondisi meteorologi setempat, arah angin, topografi wilayah, dan pola aktivitas produksi. Semua variabel tersebut sangat penting karena menentukan bagaimana polutan akan bergerak, terdispersi, atau bahkan terakumulasi pada wilayah tertentu. Dengan bantuan perangkat lunak pemodelan atmosfer, simulasi dilakukan untuk memperkirakan sebaran polusi di berbagai skenario operasional.
+            Hasil analisis menunjukkan bahwa tingkat polusi yang dihasilkan perusahaan masih berada di bawah ambang batas baku mutu lingkungan yang telah ditetapkan pemerintah. Artinya, meskipun perusahaan melakukan pembuangan emisi ke lingkungan, pengelolaan yang dilakukan sudah cukup baik sehingga tidak menimbulkan pencemaran signifikan. Temuan ini juga mengindikasikan bahwa perusahaan telah berhasil menjaga keseimbangan antara kegiatan produksi dengan upaya pelestarian lingkungan.
+            Bagi saya pribadi, project ini sangat berharga karena memberi pengalaman langsung dalam menghubungkan teori pemodelan polusi udara dengan kasus nyata di dunia industri. Selain itu, project ini memperlihatkan bagaimana kajian ilmiah dapat berperan penting dalam memastikan kegiatan industri tetap berjalan tanpa mengorbankan kesehatan masyarakat maupun kelestarian lingkungan.">
+          <img src="assets/project5.png" alt="Project 5" class="proj-img"/>
+          <div class="proj-info">
+            <h3>PT. Progressive Alumina Indonesia</h3>
+            <p>Project Dosen</p>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="proj-card"
+            data-title="PT. Everwood Indonesia"
+            data-subtitle="Agustus 2025"
+            data-img1="assets/project6a.png"
+            data-img2="assets/project6b.png"
+            data-img3="assets/project6c.png"
+            data-body="PT Everwood Industries Indonesia adalah perusahaan yang bergerak di bidang produksi material kayu berkualitas tinggi. Perusahaan ini tidak hanya berfokus pada pasar domestik, tetapi juga melayani kebutuhan pasar internasional dengan produk-produk yang ramah lingkungan serta inovatif. Dengan reputasi yang telah terbangun selama bertahun-tahun, Everwood dikenal sebagai salah satu pemain penting di industri material kayu, terutama karena konsistensinya dalam menjaga kualitas serta ketepatan waktu produksi.
+            Dalam menjalankan operasionalnya, PT Everwood Industries Indonesia berlokasi di Latrade Industrial Park, Block H2, H3, F4, Tanjung Uncang, Kecamatan Batu Aji, Kota Batam. Lokasi ini strategis karena berada di kawasan industri yang memang ditujukan untuk menopang sektor produksi skala besar sekaligus dekat dengan jalur distribusi ekspor.
+            Sama seperti pada kajian di PT Progressive Indonesia Alumina, saya kembali diberi tugas untuk melakukan pemodelan pencemaran udara yang dihasilkan dari aktivitas industri di perusahaan ini. Tahapan yang saya kerjakan mencakup analisis data emisi, pemrosesan informasi meteorologi setempat (arah angin, kecepatan angin, suhu, dan kondisi atmosfer lainnya), hingga menjalankan simulasi model dispersi polutan untuk mengetahui bagaimana emisi menyebar di sekitar wilayah industri.
+            Selain pemodelan teknis, saya juga bertanggung jawab dalam menyusun Bab 4: Prakiraan Dampak pada laporan analisis lingkungan. Bab ini berisi penjelasan mendalam mengenai potensi dampak aktivitas industri terhadap lingkungan sekitar, termasuk kualitas udara, kenyamanan masyarakat, dan kesehatan publik. Melalui bab ini, perusahaan maupun pemangku kebijakan dapat memiliki gambaran yang lebih jelas tentang bagaimana aktivitas produksi berdampak pada wilayah sekitarnya, sekaligus strategi mitigasi yang bisa diterapkan.
+            Hasil analisis menunjukkan bahwa emisi dari kegiatan produksi masih berada di bawah ambang batas baku mutu lingkungan yang berlaku. Artinya, perusahaan sudah memiliki pengelolaan lingkungan yang cukup baik, sehingga aktivitas produksi tetap dapat berjalan tanpa menimbulkan pencemaran signifikan. Namun demikian, tetap diperlukan pemantauan berkala agar kualitas lingkungan bisa dijaga secara konsisten, terutama karena perkembangan industri yang terus meningkat dari waktu ke waktu.
+            Bagi saya pribadi, project ini memberi pengalaman berharga dalam menerapkan ilmu pemodelan pencemaran udara secara nyata di dunia industri. Selain memperdalam pemahaman teknis, saya juga belajar bagaimana hasil kajian ilmiah dapat digunakan sebagai dasar pengambilan keputusan dalam menjaga keseimbangan antara produktivitas industri dan kelestarian lingkungan.">
+          <img src="assets/project6.png" alt="Project 6" class="proj-img"/>
+          <div class="proj-info">
+            <h3>PT. Everwood Indonesia</h3>
+            <p>Project Dosen</p>
+          </div>
+        </div>
+
+        <!-- Project 7 -->
+        <div class="proj-card"
+            data-title="PT. How Are You Indonesia"
+            data-subtitle="Agustus 2025"
+            data-img1="assets/project7a.png"
+            data-img2="assets/project7b.png"
+            data-img3="assets/project7c.png"
+            data-body="PT How Are You Indonesia adalah perusahaan yang bergerak di bidang industri tekstil knitting dan garment. Perusahaan ini didirikan sejak tahun 1990 dan berlokasi di Jl. Nanjung 206, Cimahi Selatan, Bandung, Jawa Barat. Dengan pengalaman lebih dari tiga dekade, perusahaan ini telah menjadi salah satu pelaku industri tekstil yang cukup berpengaruh, khususnya dalam produksi kain knitting dan pakaian siap pakai berkualitas ekspor.
+            Ruang lingkup industri tekstil knitting di PT How Are You Indonesia mencakup berbagai tahapan penting, mulai dari knitting (perajutan kain), dyeing (pewarnaan), finishing, hingga printing. Proses produksi yang lengkap ini memungkinkan perusahaan menghasilkan berbagai jenis kain knitting dengan standar mutu tinggi. Selain itu, melalui lini industri garment-nya, perusahaan juga memproduksi berbagai jenis pakaian anak maupun dewasa yang dipasarkan hingga ke pasar internasional.
+            Dalam project ini, sama seperti project sebelumnya, saya melakukan pemodelan pencemaran udara yang dihasilkan dari aktivitas industri di perusahaan tersebut. Tujuannya adalah untuk mengetahui sebaran emisi yang dilepaskan ke lingkungan, serta bagaimana potensi dampaknya terhadap kualitas udara di wilayah sekitar. Pemodelan ini tidak hanya berhenti pada perhitungan teknis, tetapi juga disusun dalam bentuk Bab 4: Prakiraan Dampak sebagai bagian dari laporan analisis lingkungan.
+            Tahapan yang saya jalani meliputi pengumpulan data emisi dari aktivitas produksi tekstil, pemrosesan data meteorologi setempat seperti arah dan kecepatan angin, serta menjalankan model dispersi polutan untuk memprediksi bagaimana emisi menyebar di sekitar lokasi industri. Hasil simulasi ini memberikan gambaran jelas mengenai potensi konsentrasi polutan di area sekitar pabrik, sekaligus menunjukkan apakah aktivitas industri masih berada dalam batas baku mutu yang diizinkan.
+            Dari hasil analisis, diperoleh kesimpulan bahwa emisi yang dihasilkan perusahaan masih berada di bawah ambang batas baku mutu lingkungan yang berlaku. Artinya, meskipun proses produksi tekstil melibatkan banyak tahapan dengan potensi pencemaran udara, pengelolaan lingkungan yang diterapkan perusahaan cukup efektif dalam menjaga agar dampaknya tetap minimal. Namun, seperti halnya industri besar lain, pemantauan dan evaluasi rutin tetap diperlukan untuk memastikan kualitas udara di sekitar pabrik terjaga secara berkelanjutan.
+            Project ini menjadi salah satu pengalaman berharga bagi saya, karena memberikan pemahaman tentang bagaimana industri tekstil—yang sangat erat kaitannya dengan kebutuhan sehari-hari—dapat dianalisis dari sudut pandang lingkungan. Selain mengasah kemampuan teknis dalam pemodelan pencemaran udara, project ini juga menegaskan pentingnya peran sains atmosfer dalam mendukung industri agar tetap produktif sekaligus ramah lingkungan.">
+          <img src="assets/project7.png" alt="Project 7" class="proj-img"/>
+          <div class="proj-info">
+            <h3>PT. How Are You Indonesia</h3>
+            <p>Project Dosen</p>
+          </div>
+        </div>
+
+        <!-- Project 8 -->
+        <div class="proj-card"
+            data-title="PT. Dahju Foam Product"
+            data-subtitle="Agustus 2025"
+            data-img1="assets/project8a.png"
+            data-img2="assets/project8b.png"
+            data-img3="assets/project8c.png"
+            data-body="PT Dahju Foam Product adalah perusahaan yang bergerak di bidang industri komponen sepatu, dengan produk utama berupa midsole, insole, sockliner, dan komponen lainnya yang menjadi bagian penting dalam proses pembuatan sepatu. Perusahaan ini berlokasi di Gebang Ilir, Kecamatan Gebang, Kabupaten Cirebon, dan menjadi salah satu produsen komponen sepatu yang berperan dalam mendukung industri alas kaki, baik untuk pasar domestik maupun ekspor.
+            Sama seperti pada project-project industri sebelumnya, saya kembali melakukan pemodelan pencemaran udara yang dihasilkan dari aktivitas produksi di perusahaan ini. Hasil pemodelan kemudian dituangkan dalam Bab 4: Prakiraan Dampak pada laporan analisis lingkungan, yang memaparkan potensi dampak polusi udara terhadap kualitas lingkungan dan masyarakat di sekitar wilayah industri.
+            Namun, ada perbedaan yang membuat project ini lebih menantang. Selain memodelkan emisi dari proses produksi di dalam perusahaan, saya juga turut memodelkan emisi yang dihasilkan dari aktivitas kendaraan di jalan yang mengelilingi PT Dahju Foam Product. Hal ini dilakukan karena aktivitas transportasi di sekitar kawasan industri tidak bisa diabaikan, mengingat volume kendaraan yang cukup tinggi setiap harinya dapat menjadi salah satu penyumbang signifikan terhadap pencemaran udara.
+            Dalam kajian ini, saya menghitung emisi kendaraan yang lewat di jalan tersebut, lalu memodelkan bagaimana sebaran dan konsentrasinya di udara. Selanjutnya, hasil tersebut dikombinasikan dengan konsentrasi ambien (udara sekitar yang telah tercemar dari berbagai sumber lain), sehingga dapat diperoleh gambaran yang lebih realistis mengenai kualitas udara di kawasan tersebut. Analisis semacam ini penting karena memberikan perspektif yang lebih menyeluruh, tidak hanya dari sisi industri, tetapi juga dari aktivitas pendukung di sekitarnya.
+            Hasil simulasi menunjukkan pola sebaran emisi kendaraan yang cukup bervariasi, dengan konsentrasi yang lebih tinggi pada jam-jam tertentu seiring meningkatnya lalu lintas. Ketika hasil pemodelan ini dijumlahkan dengan konsentrasi ambien, terlihat bagaimana aktivitas transportasi dapat memperburuk kondisi udara meskipun emisi industri masih dalam batas baku mutu lingkungan. Hal ini memberikan masukan penting bahwa pengendalian polusi udara di kawasan industri perlu melihat tidak hanya aktivitas utama perusahaan, tetapi juga mobilitas kendaraan di sekitarnya.
+            Bagi saya, project ini menjadi pengalaman penting karena memperluas cakupan analisis, dari sekadar fokus pada sumber titik (industri) menjadi gabungan dengan sumber bergerak (kendaraan). Selain meningkatkan kemampuan teknis dalam pemodelan, project ini juga memberi gambaran nyata tentang kompleksitas persoalan kualitas udara, yang seringkali dipengaruhi oleh interaksi banyak faktor di lapangan.">
+          <img src="assets/project8.png" alt="Project 8" class="proj-img"/>
+          <div class="proj-info">
+            <h3>PT. Dahju Foam Product</h3>
+            <p>Project Dosen</p>
+          </div>
+        </div>
+
+        <!-- Project 11 -->
+        <div class="proj-card"
+            data-title="Produk Pengolahan Ampas Kopi : Glow Coffee-Mask"
+            data-subtitle="Maret 2024"
+            data-img1="assets/project11a.png"
+            data-img2="assets/project11b.jpg"
+            data-img3="assets/project11c.png"
+            data-body="Project ini merupakan salah satu project besar yang saya kerjakan dalam rangka tugas mata kuliah Spacepreneur. Pada mata kuliah ini, mahasiswa ditantang untuk merancang sebuah produk inovatif yang orisinal, kreatif, dan memiliki potensi nilai jual. Tujuan dari tugas ini bukan hanya sekadar memenuhi kewajiban akademik, tetapi juga menumbuhkan jiwa kewirausahaan berbasis ilmu pengetahuan dan teknologi.
+            Saya mengusulkan ide ini bersama tiga orang rekan saya yang menjadi partner dalam mengembangkan konsep. Kami sepakat untuk mengusung produk yang mendukung target Net Zero Emission dengan memanfaatkan limbah sehari-hari. Dari diskusi, muncullah ide untuk mengolah ampas kopi bekas—yang biasanya hanya berakhir sebagai sampah rumah tangga atau kafe—menjadi produk masker wajah ramah lingkungan. Produk ini kemudian kami beri nama Glow Coffee-Mask.
+            Dalam pengerjaannya, kreativitas dan inovasi benar-benar diuji. Kami tidak hanya berpikir dari sisi kebermanfaatan bahan baku, tetapi juga dari sisi estetika, nilai jual, serta potensi pasar. Kami mencoba merancang Glow Coffee-Mask sebagai produk yang tidak hanya mengurangi limbah, tetapi juga memberi nilai tambah bagi konsumen dengan manfaat kecantikan dan perawatan kulit.
+            Project ini kemudian kami ajukan ke dalam program P2MW (Program Pembiayaan Produk Mahasiswa Wirausaha), sebuah kompetisi pendanaan bagi ide-ide produk mahasiswa paling inovatif di tingkat nasional. Kami berusaha menyusun proposal sebaik mungkin, menyajikan analisis keunggulan produk, target pasar, serta rencana bisnis sederhana.
+            Meskipun pada akhirnya produk Glow Coffee-Mask belum berhasil lolos seleksi P2MW, pengalaman ini menjadi pelajaran yang sangat berharga. Saya belajar bagaimana sebuah ide harus dikemas dengan baik, diuji dari berbagai sisi, dan mampu bersaing dengan inovasi-inovasi lain. Kegagalan ini tidak membuat kami patah semangat, justru menjadi motivasi untuk terus mencoba menciptakan produk-produk yang inovatif dan bermanfaat di masa mendatang.">
+          <img src="assets/project11.jpg" alt="Project 11" class="proj-img"/>
+          <div class="proj-info">
+            <h3>Produk Pengolahan Ampas Kopi : Glow Coffee-Mask</h3>
+            <p>Mini-Project Kuliah</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PENGALAMAN -->
+  <section id="Experience" class="content">
+    <div class="container exp-container">
+      <h2 class="exp-title">Pengalaman</h2>
+      <p class="exp-sub">Kumpulan pengalaman kerja, organisasi, dan proyek lapangan.</p>
+      
+        <!-- PATCH: TOP ROW (Main Experience) -->
+        <div class="exp-row-top">
+<div class="exp-card"
+             data-title="Kerja Praktek : MBKM - Magang Mandiri"
+             data-subtitle="Juni 2024 - Agustus 2024"
+             data-img1="assets/exp1a.jpg"
+             data-img2="assets/exp1b.jpg"
+             data-img3="assets/exp1c.jpg"
+             data-body="Pada pengalaman ini, saya mengikuti program MBKM Magang Mandiri, yang sekaligus saya jadikan sebagai masa Kerja Praktik. Saya diterima untuk melaksanakan program ini di Dinas Lingkungan Hidup dan Kehutanan Provinsi Sumatera Utara (DLHK Provsu), yang berlokasi di Medan, Kecamatan Medan Amplas, tepatnya di Jalan Sisingamangaraja. Total waktu yang saya jalani adalah dua bulan penuh, dengan pengalaman beragam di beberapa bidang yang berbeda.
+              Pada awal masa magang, saya ditempatkan di Bidang Pengendalian Kerusakan Lahan dan Hutan Mangrove. Di sini, saya mendapat kesempatan untuk merekap berbagai data penting, seperti luas wilayah hutan mangrove dari tahun ke tahun, serta mengolah laporan dari perusahaan-perusahaan yang bergerak dalam pengelolaan hutan. Selain itu, saya juga terlibat dalam pemetaan anomali suhu di Kota Medan, sebuah pengalaman yang membuat saya belajar bagaimana data spasial bisa digunakan untuk meninjau perubahan lingkungan secara langsung.
+              Setelah kurang lebih dua minggu, saya mendapat kesempatan untuk berpindah ke Bidang Pengendalian Pencemaran Udara. Bidang ini menjadi sangat penting bagi saya, karena di sinilah saya bisa mulai melakukan rekap data secara mandiri untuk keperluan penelitian Kerja Praktik saya. Ternyata, kemampuan saya dalam mengolah data dan membuat visualisasi diminati langsung oleh Kepala Dinas DLHK Provsu, hingga saya diundang menjadi Staff Ahli Tenaga Pendukung dalam proyek yang beliau jalankan, yaitu Rancangan Proyek Perubahan (RPP).
+              Dalam posisi ini, saya diberi tanggung jawab untuk membantu aspek teknis, seperti menyajikan data yang telah disiapkan, membuat desain logo proyek perubahan, menyusun desain laporan akhir, hingga menyiapkan desain materi presentasi yang nantinya dipaparkan oleh beliau di Badan Pengelolaan Sumber Daya Sumatera Utara. Pengalaman ini sangat berkesan, karena selain belajar tentang teknis pengolahan data lingkungan, saya juga belajar bagaimana mengkomunikasikan data tersebut secara menarik dan profesional.
+              Setelah sekitar tiga minggu, saya kembali mendapat kesempatan untuk berpindah bidang, kali ini ke Bidang Pengelolaan Limbah dan Bahan Berbahaya Beracun (PLB3). Di bidang ini, saya banyak merekap data dari laporan perusahaan-perusahaan yang menghasilkan limbah dari aktivitas operasional mereka. Pengalaman ini membuka wawasan baru bagi saya mengenai bagaimana pengelolaan limbah industri dilakukan, serta pentingnya pencatatan data yang rapi sebagai dasar pengawasan dan regulasi lingkungan.
+              Sebagai penutup dari rangkaian MBKM ini, saya bersama mahasiswa Fakultas Sains lainnya yang juga mengikuti program Magang Mandiri mengadakan pameran hasil MBKM. Pada kesempatan ini, kami mempresentasikan hasil kerja, pengalaman, serta kontribusi yang telah diberikan selama menjalani program di instansi masing-masing.
+              Secara keseluruhan, pengalaman MBKM Magang Mandiri di DLHK Provsu ini menjadi salah satu momen penting dalam perjalanan akademik saya. Tidak hanya memberikan pemahaman praktis tentang berbagai bidang lingkungan hidup, tetapi juga mengasah kemampuan saya dalam analisis data, komunikasi, desain, dan koordinasi lintas bidang.">
+            <!-- PATCH: Signature Ribbon (Experience) -->
+            <span class="sig-bar">SIGNATURE EXPERIENCE</span>
+          <img src="assets/exp1-thumb.jpg" alt="Preview Pengalaman" class="exp-img"/>
+          <div class="exp-info">
+            <h3>Kerja Praktek : MBKM - Magang Mandiri</h3>
+            <p>Dinas Lingkungan Hidup dan Kehutanan Provinsi Sumatera Utara</p>
+          </div>
+        </div>
+        </div>
+<div class="exp-scroll">
+
+        
+
+        <div class="exp-card"
+             data-title="Pengabdian Masyarakat : Perancangan Desa Binaan Melalui Pemberdayaan Kelompok Asuhan Mandiri"
+             data-subtitle="Desember 2024"
+             data-img1="assets/exp2a.jpg"
+             data-img2="assets/exp2b.jpg"
+             data-img3="assets/exp2c.jpg"
+             data-body="Pada sekitar Desember 2024, saya mendapat kesempatan untuk ikut serta dalam kegiatan Pengabdian Masyarakat (PengMas) yang diselenggarakan oleh Fakultas Sains Institut Teknologi Sumatera (ITERA). Kesempatan ini datang setelah saya diajak langsung oleh salah seorang dosen, dan bagi saya menjadi pengalaman yang sangat berharga karena bisa terlibat secara langsung dalam kegiatan nyata bersama masyarakat.
+              Kegiatan ini dilaksanakan di Desa Bumi Sari, Kecamatan Natar, Lampung Selatan, dengan fokus utama pada perbaikan gizi masyarakat, pencegahan stunting anak, serta pengembangan potensi wirausaha desa. Dalam kegiatan ini, dosen memimpin jalannya pemaparan dan edukasi kepada masyarakat, sementara saya bersama tim mahasiswa mendapat peran pada bagian operasional lapangan.
+              Jumlah mahasiswa yang terlibat dalam kegiatan ini sangat terbatas, yaitu kurang dari 10 orang, sehingga setiap individu memiliki tanggung jawab yang cukup besar. Saya dan rekan-rekan mahasiswa berperan aktif dalam menyiapkan kebutuhan teknis kegiatan, mendampingi dosen selama pemaparan, serta melakukan interaksi langsung dengan warga desa. Salah satu kegiatan penting yang kami lakukan adalah survei sederhana berupa kuesioner ringan yang ditujukan kepada warga.
+              Hasil survei tersebut kemudian dikumpulkan dan diolah lebih lanjut untuk mendapatkan gambaran mengenai kondisi sosial-ekonomi serta pola gizi masyarakat desa. Data yang terkumpul digunakan sebagai pembobot dalam analisis, yang pada akhirnya menjadi dasar penyusunan rekomendasi serta strategi pengembangan desa. Menariknya, data hasil survei ini tidak berhenti hanya sebagai laporan internal, tetapi juga diproses hingga menghasilkan sebuah publikasi jurnal yang memperkuat kontribusi kegiatan ini dalam ranah akademik.
+              Bagi saya pribadi, pengalaman PengMas ini memberikan banyak pelajaran, mulai dari keterampilan teknis dalam mengelola data survei, kemampuan berkomunikasi langsung dengan masyarakat, hingga pemahaman tentang bagaimana riset dan kegiatan ilmiah dapat diimplementasikan dalam bentuk solusi nyata bagi kehidupan sehari-hari. Kegiatan ini juga semakin menegaskan pentingnya sinergi antara dunia akademik dengan masyarakat dalam menciptakan perubahan yang berkelanjutan.">
+          <img src="assets/exp2-thumb.jpg" alt="Preview Pengalaman" class="exp-img"/>
+          <div class="exp-info">
+            <h3>Pengabdian Masyarakat : Perancangan Desa Binaan Melalui Pemberdayaan Kelompok Asuhan Mandiri</h3>
+            <p>Desa Bumi Sari, Natar, Lampung Selatan</p>
+          </div>
+        </div>
+
+        <div class="exp-card"
+             data-title="Kuliah Kerja Nyata : Pembelajaran Pemberdayaan Masyarakat"
+             data-subtitle="Desember 2023 - Januari 2024"
+             data-img1="assets/exp3a.jpg"
+             data-img2="assets/exp3b.jpg"
+             data-img3="assets/exp3c.jpg"
+             data-body="Pada akhir tahun 2023, saya mendapat kesempatan untuk mengikuti Kuliah Kerja Nyata (KKN) sebagai bagian dari kewajiban akademik sekaligus bentuk pengabdian kepada masyarakat. Saya tergabung dalam Kelompok 158, salah satu dari sekian banyak kelompok mahasiswa yang diterjunkan ke berbagai daerah. Kelompok kami ditempatkan di Desa Sumber Rejo, sebuah desa yang menjadi lokasi kegiatan KKN selama lebih dari satu bulan, mulai Desember 2023 hingga Januari 2024.
+              KKN ini menjadi pengalaman yang sangat berkesan karena saya tidak hanya bekerja bersama teman-teman satu program studi, tetapi juga berkolaborasi dengan mahasiswa dari berbagai disiplin ilmu. Rekan satu tim saya berasal dari beragam latar belakang, di antaranya: Teknik Kimia, Teknik Geofisika, Teknik Sipil, Desain Komunikasi Visual (DKV), Arsitektur, Perencanaan Wilayah dan Kota, Teknik Biomedis, Farmasi, Teknik Pertambangan, Teknik Geomatika, Teknik Kelautan, Teknik Perkeretaapian, serta Teknik Sistem Energi.
+              Keberagaman latar belakang ini menjadikan kelompok kami sangat kaya ide dan perspektif. Setiap anggota membawa cara pandang dan keterampilan yang berbeda, sehingga ketika digabungkan, menghasilkan banyak inovasi dan solusi yang bisa diterapkan dalam program kerja. Saya sendiri berkontribusi dari sudut pandang Sains Atmosfer dan Keplanetan, terutama dalam hal pemahaman lingkungan dan potensi penerapan ilmu atmosfer untuk mendukung kegiatan masyarakat desa.
+              Selama KKN, kami menjalankan berbagai kegiatan yang menyentuh langsung kehidupan warga, mulai dari pendampingan edukasi, pengelolaan lingkungan, hingga penyusunan ide-ide pembangunan sederhana yang bisa dilakukan masyarakat secara mandiri. Interaksi dengan masyarakat desa juga memberi saya pelajaran berharga tentang arti kolaborasi, komunikasi lintas bidang, serta bagaimana ilmu yang kami pelajari di kampus bisa diterjemahkan menjadi manfaat nyata di lapangan.
+              Pengalaman KKN ini bukan hanya sekadar program wajib dari kampus, tetapi juga menjadi kesempatan untuk membangun jejaring, mengasah keterampilan sosial, serta menanamkan rasa tanggung jawab dalam berkontribusi kepada masyarakat. Bagi saya, KKN di Desa Sumber Rejo bersama Kelompok 158 adalah salah satu pengalaman penting yang memperkaya perjalanan akademik dan pribadi saya.">
+          <img src="assets/exp3-thumb.jpg" alt="Preview Pengalaman" class="exp-img"/>
+          <div class="exp-info">
+            <h3>Kuliah Kerja Nyata : Pembelajaran Pemberdayaan Masyarakat</h3>
+            <p>Desa Sumber Rejo, Lampung Timur</p>
+          </div>
+        </div>
+
+        <div class="exp-card"
+             data-title="Staff Divisi Karya Kompetensi, Departemen Keilmuan"
+             data-subtitle="Juli 2023 - Juni 2024"
+             data-img1="assets/exp4a.jpg"
+             data-img2="assets/exp4b.jpg"
+             data-img3="assets/exp4c.jpg"
+             data-body="Selama menjadi mahasiswa, saya aktif dalam kegiatan organisasi di bawah Himpunan Mahasiswa Sains Atmosfer dan Keplanetan (HIMASAKA ARKANANTA). Saya dipercaya untuk bergabung di Departemen Keilmuan sebagai Staff Divisi Karya Kompetensi. Peran ini memberi saya kesempatan untuk belajar mengelola kegiatan organisasi sekaligus mengembangkan keterampilan di bidang non-akademik, khususnya dalam aspek olahraga dan kompetisi mahasiswa.
+            Tugas utama saya di divisi ini adalah mengorganisir cabang olahraga yang dikhususkan untuk mahasiswa Sains Atmosfer dan Keplanetan. Beberapa olahraga yang saya tangani antara lain sepak bola, futsal, voli, dan bulutangkis. Saya terlibat dalam perencanaan jadwal latihan, koordinasi antaranggota, serta persiapan teknis ketika tim mengikuti berbagai turnamen.
+            Selama masa kepengurusan, saya bersama tim sempat mengikuti sejumlah kompetisi antar mahasiswa di ITERA maupun antar himpunan. Beberapa di antaranya adalah Liga Ilmiah ITERA, Persitera Cup (futsal), serta Spectro Cup (futsal). Melalui kompetisi-kompetisi tersebut, saya belajar bagaimana pentingnya kerja sama tim, manajemen waktu, serta menjaga semangat sportifitas dalam berkompetisi.
+            Pengalaman ini tidak hanya memperkaya kehidupan organisasi saya, tetapi juga memberi ruang untuk menyeimbangkan kegiatan akademik dengan aktivitas non-akademik. Bagi saya, menjadi bagian dari Divisi Karya Kompetensi bukan sekadar mengurus pertandingan, tetapi juga berkontribusi dalam membangun kebersamaan dan memperkuat solidaritas antar mahasiswa di program studi saya.">
+          <img src="assets/exp4-thumb.jpg" alt="Preview Pengalaman" class="exp-img"/>
+          <div class="exp-info">
+            <h3>Staff Divisi Karya Kompetensi, Departemen Keilmuan</h3>
+            <p>Himpunan Mahasiswa Sains Atmosfer dan Keplanetan</p>
+          </div>
+        </div>
+
+        <div class="exp-card"
+             data-title="Kepala Divisi Minat & Bakat, Departemen Keilmuan"
+             data-subtitle="Juli 2024 - Juni 2025"
+             data-img1="assets/exp5a.jpg"
+             data-img2="assets/exp5b.jpg"
+             data-img3="assets/exp5c.jpg"
+             data-body="Selain aktif sebagai staff, saya juga pernah dipercaya untuk menjadi Kepala Divisi Minat dan Bakat di bawah Departemen Keilmuan Himpunan Mahasiswa Sains Atmosfer dan Keplanetan (HIMASAKA ARKANANTA). Dalam posisi ini, saya memimpin sebuah divisi yang beranggotakan 10 orang staff. Peran ini menuntut saya bukan hanya mengoordinasikan kegiatan, tetapi juga memberikan ruang bagi mahasiswa untuk menyalurkan minat dan bakatnya di luar aspek akademik.
+            Salah satu terobosan yang kami lakukan adalah memperluas bidang olahraga dan kesenian yang sebelumnya belum banyak diakomodasi pada kepengurusan sebelumnya. Jika dulu fokus lebih banyak pada cabang olahraga populer, maka di masa kepemimpinan saya kami juga menggandeng bidang minat lain seperti tari, dance, dan renang. Upaya ini dilakukan agar lebih banyak mahasiswa merasa terfasilitasi dan memiliki wadah untuk mengembangkan potensi diri.
+            Divisi Minat dan Bakat juga aktif mengoordinasikan partisipasi HIMASAKA dalam berbagai event dan kompetisi, baik di tingkat internal ITERA maupun antar himpunan. Beberapa kegiatan yang kami ikuti antara lain ScienceFest, SpectroCup, Persitera Cup, Himatel Cup, serta ITERA Olympic. Partisipasi ini bukan hanya tentang meraih prestasi, tetapi juga membangun kebersamaan, meningkatkan eksistensi prodi di lingkungan kampus, serta memperluas jaringan dengan mahasiswa dari program studi lain.
+            Selain mengikuti event resmi, kami juga menjalin sparing dan kolaborasi dengan program studi lain di ITERA. Kegiatan ini tidak hanya menjadi ajang latihan bersama, tetapi juga sarana mempererat hubungan antar mahasiswa lintas jurusan. Dari sini, tercipta suasana kompetitif yang sehat sekaligus kebersamaan yang lebih kuat di lingkungan kampus.
+            Pengalaman menjadi Kepala Divisi Minat dan Bakat ini sangat berkesan bagi saya. Saya belajar banyak tentang kepemimpinan, manajemen tim, inovasi program, serta pentingnya komunikasi lintas divisi dan prodi. Lebih dari itu, pengalaman ini mengajarkan bahwa minat dan bakat mahasiswa, baik di bidang olahraga maupun seni, sama pentingnya dengan prestasi akademik, karena keduanya saling melengkapi dalam membentuk pribadi mahasiswa yang utuh.">
+          <img src="assets/exp5-thumb.jpg" alt="Preview Pengalaman" class="exp-img"/>
+          <div class="exp-info">
+            <h3>Kepala Divisi Minat & Bakat, Departemen Keilmuan</h3>
+            <p>Himpunan Mahasiswa Sains Atmosfer dan Keplanetan</p>
+          </div>
+        </div>
+
+        <div class="exp-card"
+             data-title="Asisten Praktikum Hidrometeorologi"
+             data-subtitle="Agustus 2024 - Desember 2024"
+             data-img1="assets/exp6a.jpg"
+             data-img2="assets/exp6b.jpg"
+             data-img3="assets/exp6c.jpg"
+             data-body="Saya juga memiliki pengalaman sebagai Asisten Praktikum Hidrometeorologi, sebuah mata kuliah penting di Program Studi Sains Atmosfer dan Keplanetan. Peran ini memberi saya kesempatan tidak hanya memperdalam materi perkuliahan, tetapi juga melatih kemampuan komunikasi dan pendampingan kepada mahasiswa lain.
+              Dalam praktikum ini, saya mendampingi mahasiswa pada beberapa modul inti yang saling berkaitan. Modul pertama adalah mengenai curah hujan rencana, di mana mahasiswa belajar menghitung dan menganalisis curah hujan berdasarkan data historis sebagai dasar perencanaan hidrologi. Selanjutnya, mahasiswa juga diperkenalkan pada deliniasi daerah aliran sungai (DAS) dan perhitungan curah hujan wilayah, sehingga mereka dapat memahami bagaimana konsep DAS dan distribusi hujan memengaruhi sistem hidrologi. Modul berikutnya berfokus pada penerapan Sistem Informasi Geografi (SIG) dan Model Builder, yang mengajarkan penggunaan perangkat lunak pemetaan dan pemodelan spasial untuk mendukung analisis hidrologi. Modul terakhir adalah pemodelan menggunakan HEC-RAS, sebuah perangkat lunak yang digunakan untuk menganalisis aliran sungai dan proses hidraulika.
+              Sebagai asisten, saya berperan aktif memberikan arahan teknis, menjawab pertanyaan mahasiswa, membantu jika terjadi kendala dalam penggunaan perangkat lunak, serta terlibat dalam penilaian laporan praktikum. Saya juga memastikan setiap mahasiswa dapat melihat keterkaitan antara teori yang mereka pelajari di kelas dengan praktik nyata di laboratorium maupun aplikasi lapangan.
+              Pengalaman ini sangat berharga karena saya tidak hanya mengasah keterampilan teknis dalam bidang hidrometeorologi, tetapi juga belajar mengelola kelas, melatih kesabaran dalam membimbing mahasiswa, dan meningkatkan kemampuan komunikasi akademik saya.">
+          <img src="assets/exp6-thumb.jpg" alt="Preview Pengalaman" class="exp-img"/>
+          <div class="exp-info">
+            <h3>Asisten Praktikum</h3>
+            <p>Mata Kuliah Hidrometeorologi 2024</p>
+          </div>
+        </div>
+
+        <div class="exp-card"
+             data-title="Asisten Praktikum Pemodelan Cuaca & Iklim 1"
+             data-subtitle="Agustus 2025 - Desember 2025"
+             data-img1="assets/exp7a.jpg"
+             data-img2="assets/exp7b.jpg"
+             data-img3="assets/exp7c.jpg"
+             data-body="Pada periode Agustus 2025 hingga Desember 2025, saya mendapat kesempatan menjadi Asisten Praktikum Pemodelan Cuaca dan Iklim 1. Dalam peran ini, saya bersama lima orang asisten lainnya bertanggung jawab mendampingi sebuah kelas besar yang berisi sekitar enam puluh mahasiswa. Tugas ini menantang karena jumlah mahasiswa yang cukup banyak, sehingga dibutuhkan koordinasi yang baik antar asisten agar proses praktikum berjalan lancar.
+              Praktikum ini berfokus pada pengenalan berbagai perangkat lunak dan model yang digunakan dalam pemodelan cuaca maupun iklim. Beberapa modul yang saya dampingi antara lain penggunaan GrADS (Grid Analysis and Display System) untuk visualisasi data atmosfer, Climate Data Operator (CDO) untuk pengolahan data iklim, serta Weather Research and Forecasting (WRF) yang merupakan salah satu model numerik paling populer di bidang meteorologi. Selain itu, mahasiswa juga diperkenalkan pada Climate-Toy Model sebagai model sederhana untuk memahami konsep dasar dinamika iklim, serta Planet-Simulator Model yang memungkinkan eksplorasi fenomena iklim dalam skala global.
+              Sebagai asisten, saya berperan dalam menjelaskan alur penggunaan perangkat, membantu mahasiswa mengatasi kendala teknis, serta memastikan mereka memahami hubungan antara teori pemodelan dengan aplikasi langsung melalui perangkat lunak tersebut. Dengan jumlah mahasiswa yang besar, saya juga belajar bagaimana mengelola kelas, menjaga komunikasi efektif, dan bekerja sama dengan sesama asisten agar setiap mahasiswa mendapatkan pendampingan yang memadai.
+              Pengalaman ini memperkaya pemahaman saya mengenai berbagai model cuaca dan iklim sekaligus mengasah keterampilan pedagogis, mulai dari kemampuan mengajar, manajemen waktu, hingga kesabaran dalam membimbing mahasiswa yang memiliki tingkat pemahaman berbeda-beda. Bagi saya, menjadi asisten praktikum ini adalah kesempatan berharga untuk menggabungkan aspek teknis dan aspek pembelajaran dalam satu pengalaman akademik yang komprehensif.">
+          <img src="assets/exp7-thumb.jpg" alt="Preview Pengalaman" class="exp-img"/>
+          <div class="exp-info">
+            <h3>Asisten Praktikum</h3>
+            <p>Mata Kuliah Pemodelan Cuaca & Iklim I 2025</p>
+          </div>
+        </div>
+
+        <div class="exp-card"
+             data-title="Asisten Praktikum Meteorologi Terapan"
+             data-subtitle="Agustus 2025 - Desember 2025"
+             data-img1="assets/exp8a.jpg"
+             data-img2="assets/exp8b.jpg"
+             data-img3="assets/exp8c.jpg"
+             data-body="Saya juga memiliki pengalaman sebagai Asisten Praktikum Meteorologi Terapan, sebuah mata kuliah baru yang pada saat itu bahkan belum memiliki modul resmi. Kondisi ini membuat peran saya sebagai asisten menjadi lebih menantang sekaligus menarik, karena saya dan seorang rekan asisten lainnya harus menyusun dan mengembangkan materi praktikum secara mandiri dari awal. Kami berdua bertanggung jawab penuh menangani satu kelas dengan jumlah mahasiswa sekitar tiga puluh lima orang.
+              Dalam praktikum ini, mahasiswa diperkenalkan pada berbagai keterampilan teknis dan perangkat yang langsung berkaitan dengan penerapan ilmu meteorologi di lapangan. Beberapa topik yang kami bimbing meliputi pengolahan data meteorologi berbasis Python yang dilengkapi dengan penggunaan perangkat lunak WRPLOT untuk analisis sebaran angin, inventarisasi emisi sebagai dasar dalam memahami sumber pencemar, serta penggunaan model AERMOD untuk simulasi dispersi polutan di atmosfer. Mahasiswa juga diajak untuk mengenal model HYSPLIT, yang sering digunakan dalam memodelkan transportasi partikel atau polutan jarak jauh, serta WebGIS untuk visualisasi spasial berbasis web. Sebagai penutup, mahasiswa ditugaskan menyusun sebuah portofolio berbasis website yang merangkum seluruh hasil praktikum mereka.
+              Peran saya tidak hanya memberikan arahan teknis, tetapi juga membantu mahasiswa memahami keterkaitan antara teori meteorologi terapan dengan aplikasinya di dunia nyata. Karena modul resmi belum ada, saya dan rekan saya banyak berinovasi dalam menyusun alur pembelajaran, menyiapkan data, serta memastikan setiap mahasiswa mampu mengikuti alur praktikum meskipun tingkat kesulitannya relatif tinggi.
+              Pengalaman ini sangat berkesan karena memberikan ruang bagi saya untuk berkembang tidak hanya dalam hal teknis, tetapi juga dalam hal pengajaran, improvisasi, dan kepemimpinan kelas. Saya belajar bahwa menjadi asisten tidak hanya soal menguasai materi, tetapi juga bagaimana menghadirkan pembelajaran yang adaptif, relevan, dan bermakna bagi mahasiswa.">
+          <img src="assets/exp8-thumb.jpg" alt="Preview Pengalaman" class="exp-img"/>
+          <div class="exp-info">
+            <h3>Asisten Praktikum</h3>
+            <p>Mata Kuliah Meteorologi Terapan 2025</p>
+          </div>
+        </div>
+
+        <div class="exp-card"
+             data-title="Asisten Dosen"
+             data-subtitle="2024 - 2025"
+             data-img1="assets/exp9a.jpg"
+             data-img2="assets/exp9b.jpg"
+             data-img3="assets/exp9c.jpg"
+             data-body="Salah satu pengalaman paling berkesan selama masa studi saya adalah menjadi Asisten Dosen di Program Studi Sains Atmosfer dan Keplanetan bersama rekan saya, Farras. Dalam peran ini, kami tidak hanya membantu kebutuhan kelas, tetapi juga dipercaya untuk mengorganisir serta menangani proyek-proyek penelitian yang sedang dijalankan oleh dosen pembimbing kami. Tanggung jawab ini menuntut kami untuk bekerja secara sistematis, berkoordinasi dalam tim, sekaligus mengasah keterampilan manajemen proyek dan problem solving dalam konteks akademik maupun teknis. Pengalaman ini memberi saya banyak pelajaran berharga, terutama bagaimana mengelola pekerjaan dengan target yang jelas, berkomunikasi efektif, serta menjaga profesionalitas dalam mendukung pencapaian tujuan bersama.
+             ">
+          <img src="assets/exp9-thumb.jpg" alt="Preview Pengalaman" class="exp-img"/>
+          <div class="exp-info">
+            <h3>Asisten Dosen</h3>
+            <p>2024 - 2025</p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+    <!-- PATCH: Pelatihan -->
+  <section id="Pelatihan" class="content">
+  <div class="container list-container">
+    <h2 class="list-title">Training</h2>
+    <p class="list-sub">Daftar pelatihan yang pernah diikuti.</p>
+
+    <!-- HANYA SATU list-scroll dengan id=pelatihanList -->
+    <div class="list-scroll" id="pelatihanList">
+      <div class="list-card"
+           data-title="An Introduction To WebGIS: Membangun WebGIS Interaktif Dengan QGIS & Integrasi Javascript"
+           data-subtitle="21, 28, 29 Juni 2025 (3 Sesi Intensif)"
+           data-img1="assets/pelatihanA.jpg"
+           data-body="Deskripsi singkat pelatihan.">
+        <h3>An Introduction To WebGIS: Membangun WebGIS Interaktif Dengan QGIS & Integrasi Javascript</h3>
+        <time>21, 28, 29 Juni 2025 (3 Sesi Intensif)</time>
+        <span class="detail-text">Klik untuk detail</span>
+      </div>
+
+      <div class="list-card"
+           data-title="GIS Course: Pemodelan Prediksi Kerawanan Banjir Berbasis Machine Learning"
+           data-subtitle="27 September 2025"
+           data-img1="assets/pelatihanA.jpg"
+           data-body="Deskripsi singkat pelatihan.">
+        <h3>GIS Course: Pemodelan Prediksi Kerawanan Banjir Berbasis Machine Learning</h3>
+        <time>27 September 2025</time>
+        <span class="detail-text">Klik untuk detail</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- PATCH: Sertifikat -->
+  <section id="Sertifikat" class="content">
+    <div class="container list-container">
+      <h2 class="list-title">Certificates</h2>
+      <p class="list-sub">Koleksi sertifikat yang dimiliki.</p>
+      <div class="list-scroll" id="sertifikatList">
+        <div class="list-card" data-title="Sertifikat A" data-subtitle="2023" data-img1="assets/sertifikatA.jpg" data-body="">
+          <h3>Sertifikat A</h3>
+          <time>2023</time>
+          <span class="detail-text">Klik untuk detail</span>
+        </div>
+        <!-- Tambahkan .list-card item di sini. Contoh:
+        <div class="list-card" data-title="Sertifikat A" data-subtitle="2024" data-img1="assets/sertifikatA.jpg" data-body="">
+          <h3>Sertifikat A</h3>
+          <time>2024</time>
+        </div>
+        -->
+      </div>
+    </div>
+  </section>
+
+  <!-- PATCH: About & Contact placeholders for working navigation -->
+<!-- PATCH v5: Contact Section with logo boxes -->
+  <section id="contact" class="content">
+    <div class="container contact-container">
+      <h2 class="list-title">Contact</h2>
+      <p class="list-sub">Temui saya di kanal berikut.</p>
+      <div class="contact-scroll">
+        <div class="contact-card">
+          <a href="#" target="_blank" rel="noopener">
+            <img src="assets/instagram.png" alt="Instagram"/>
+          </a>
+          <span class="contact-cta">Klik untuk mengontak saya</span>
+        </div>
+        <div class="contact-card">
+          <a href="#" target="_blank" rel="noopener">
+            <img src="assets/facebook.png" alt="Facebook"/>
+          </a>
+          <span class="contact-cta">Klik untuk mengontak saya</span>
+        </div>
+        <div class="contact-card">
+          <a href="#" target="_blank" rel="noopener">
+            <img src="assets/gmail.png" alt="Email"/>
+          </a>
+          <span class="contact-cta">Klik untuk mengontak saya</span>
+        </div>
+        <div class="contact-card">
+          <a href="#" target="_blank" rel="noopener">
+            <img src="assets/youtube.png" alt="YouTube"/>
+          </a>
+          <span class="contact-cta">Klik untuk mengontak saya</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- DOCK -->
+    <nav class="dock">
+    <a href="#home" class="active">Home</a>
+    <a href="#Academics">Academics</a>
+    <a href="#Projects">Projects</a>
+    <a href="#Experience">Experience</a>
+    <a href="#Pelatihan">Training</a>
+    <a href="#Sertifikat">Certificates</a>
+<a href="#contact">Contact</a>
+  </nav>
+
+  <!-- POPUP DETAIL EDUCATION -->
+  <!-- PATCH: Redesigned Education Modal -->
+  <div id="eduModal" class="edu-modal" aria-hidden="true">
+    <div class="edu-modal-content">
+      <button class="edu-close">&times;</button>
+      <div class="edu-modal-header">
+        <h3 id="eduModalTitle"></h3>
+      </div>
+      <div class="edu-modal-gallery" aria-live="polite"></div>
+      <p id="eduModalDesc" class="edu-modal-desc"></p>
+    </div>
+  </div>
+
+  <!-- POPUP PROJECTS & EXPERIENCE -->
+  <div id="itemModal" class="item-modal" aria-hidden="true">
+    <div class="item-modal-content">
+      <button class="item-close">&times;</button>
+      <div class="item-modal-header">
+        <h3 id="itemModalTitle"></h3>
+        <p id="itemModalSubtitle"></p>
+      </div>
+      <div class="item-modal-body">
+        <div class="item-modal-media"></div>
+        <div class="item-modal-text">
+          <p id="itemModalDesc"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-transition"></div>
+  <script src="script.js"></script>
+</body>
+</html>
