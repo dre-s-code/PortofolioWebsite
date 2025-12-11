@@ -438,7 +438,7 @@ body.modal-open{ overflow:hidden; }
 .edu-modal-desc{ max-width:960px; text-align:center; line-height:1.6; }
 
 /* ==================== PATCH: Training & Certificate sections ==================== */
-.list-container{ max-width:1200px; margin: 0 auto; }
+.list-container{ max-width:1800px; margin: 0 auto; }
 .list-title{ text-align:center; margin-bottom:8px; }
 .list-sub{ text-align:center; opacity: .8; margin-bottom: 8px; }
 .list-scroll{
